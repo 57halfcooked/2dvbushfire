@@ -1,22 +1,22 @@
-state,area,hectares
-Australian Capital Territory,Forest area in fire area,83
-New South Wales,Forest area in fire area,"5,123"
-Queensland,Forest area in fire area,514
-South Australia,Forest area in fire area,137
-Tasmania,Forest area in fire area,30
-Victoria,Forest area in fire area,"1,457"
-Western Australia,Forest area in fire area,"1,143"
-Australian Capital Territory,Total Fire Area,90
-New South Wales,Total Fire Area,"5,682"
-Queensland,Total Fire Area,574
-South Australia,Total Fire Area,313
-Tasmania,Total Fire Area,45
-Victoria,Total Fire Area,"1,583"
-Western Australia,Total Fire Area,"2,044"
-Australian Capital Territory,Total Forest Area,142
-New South Wales,Total Forest Area,"20,368"
-Queensland,Total Forest Area,"51,830"
-South Australia,Total Forest Area,"5,060"
-Tasmania,Total Forest Area,"3,699"
-Victoria,Total Forest Area,"8,222"
-Western Australia,Total Forest Area,"20,981"
+state,area,hundredthousandhectares
+Australian Capital Territory,Forest area in fire area,0.83
+New South Wales,Forest area in fire area,51
+Queensland,Forest area in fire area,5.14
+South Australia,Forest area in fire area,1.37
+Tasmania,Forest area in fire area,0.3
+Victoria,Forest area in fire area,15
+Western Australia,Forest area in fire area,11
+Australian Capital Territory,Total Fire Area,0.9
+New South Wales,Total Fire Area,57
+Queensland,Total Fire Area,5.74
+South Australia,Total Fire Area,3.13
+Tasmania,Total Fire Area,0.45
+Victoria,Total Fire Area,16
+Western Australia,Total Fire Area,20
+Australian Capital Territory,Total Forest Area,1.42
+New South Wales,Total Forest Area,204
+Queensland,Total Forest Area,518
+South Australia,Total Forest Area,51
+Tasmania,Total Forest Area,37
+Victoria,Total Forest Area,82
+Western Australia,Total Forest Area,210
