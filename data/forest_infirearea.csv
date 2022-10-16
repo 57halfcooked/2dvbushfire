@@ -1,4 +1,4 @@
-State,Fire_area('000hectares),Forestarea_infirearea('000 hectares),Proportionof_firearea_isforested(%)
+State,Fire_area_hectares,Forestarea_infirearea_hectares,Proportionof_firearea_isforested%
 Australian Capital Territory,90,83,93
 New South Wales,"5,682","5,123",90
 Northern Territory,0,0,0
