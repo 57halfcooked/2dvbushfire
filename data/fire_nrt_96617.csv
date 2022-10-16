@@ -1,4 +1,4 @@
-latitude,longitude,brightness,acq_date,acq_time,daynight
+latitude,Longitude,Severity,acq_date,No.ofBushfire,DayNight
 -29.721,151.987,393.6,8/11/2019,410,D
 -11.938,133.28,336.2,24/10/2019,500,N
 -11.504,142.546,340,30/11/2019,50,D
