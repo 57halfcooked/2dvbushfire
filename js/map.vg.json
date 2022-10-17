@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 300,
+    "width": 290,
     "height": 350,
     "title": "The distribution of Australian bushfires between 1 Oct 2019 and 11 Jan 2020",
     "projection": {"type": "equalEarth"},
