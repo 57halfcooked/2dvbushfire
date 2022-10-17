@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/57halfcooked/2dvbushfire/main/data/foresttenure.csv"},
+    "width": 500,
+    "height": 500,
+    "mark":{ "type":"bar", "tooltip": [
+        {"field": "forest_tenure", "type": "nominal","format": ","},
+        {"field": "state", "type": "nominal","format": ","},
+        {"field": "hundreadthousandhectares", "type": "quantitative", "format": ".2f"}   
+        ]
+        },
+    "params": [
+      {
+        "name": "forest_tenure_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Leasehold forest",
+            "Multiple-use public forest",
+            "Nature conservation reserve",
+            "Other Crown land",
+            "Private forest",
+            "Unresolved tenure"
+          ],
+          "labels": [
+            "Show All",
+            "Leasehold forest",
+            "Multiple-use public forest",
+            "Nature conservation reserve",
+            "Other Crown land",
+            "Private forest",
+            "Unresolved tenure"
+          ],
+          "name": "Forest Tenure Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "forest_tenure_selection == null || datum.forest_tenure == forest_tenure_selection"
+        }
+    ],
+    "encoding": {
+      "x": {
+        "field": "state",
+        "type": "nominal",
+        "title": "States"
+      },
+      "y": {
+        "aggregate": "sum",
+        "field": "hundreadthousandhectares",
+        "type": "quantitative",
+        "title":"Hundred Thousand Hectares"
+      },
+      "color": {
+        "field": "forest_tenure",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Leasehold forest", "Multiple-use public forest", "Nature conservation reserve", "Other Crown land", "Private forest","Unresolved tenure"],
+          "range": ["#1f78b4", "#a6cee3", "#fb9a99", "#fdbf6f", "#cab2d6","#be5928"]
+        },
+        "title": "Forest Tenure"
+      }
+    }
+  }
+  

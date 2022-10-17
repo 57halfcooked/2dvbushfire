@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "The Relation between Forest Area with total forest hectares and total Fire hectares during 11/2019 to 01/2020 ",
+    "data": {"url": "https://raw.githubusercontent.com/57halfcooked/2dvbushfire/main/data/statehectare.csv"},
+    "width": 500,
+    "height": 500,
+    "mark": {
+      "type": "line",
+      "point": true,
+      "tooltip": [
+        {"field": "area", "type": "nominal"},
+        {"field": "state", "type": "nominal","format": ","},
+        {"field": "hundredthousandhectares", "type": "quantitative", "format": ".2f"}   
+      ]
+    },
+    "params": [
+      {
+        "name": "area_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Forest area in fire area",
+            "Total Fire Area",
+            "Total Forest Area"
+          ],
+          "labels": [
+            "Show All",
+            "Forest area in fire area",
+            "Total Fire Area",
+            "Total Forest Area"
+          ],
+          "name": "Area Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "area_selection == null || datum.area == area_selection"
+        }
+    ], 
+    "encoding": {
+      "x": {"field": "state","type": "nominal","title":"States"},
+      "y": {"field": "hundredthousandhectares", "type": "quantitative","title":"Hundred Thousand Hectares","scale": {"domain": [1, 530]}},
+      "color": {"field": "area", "type": "nominal","title":"Area","scale": {
+          "domain": [
+            "Forest area in fire area",
+            "Total Fire Area",
+            "Total Forest Area"
+          ],
+          "range": [
+            "#fd8d3c",
+            "#9c9ede",
+            "#17becf"
+          ]
+        }}
+    } 
+}
+  
