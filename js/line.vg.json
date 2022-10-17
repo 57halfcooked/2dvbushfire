@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "The Relation between Forest Area with total forest hectares and total Fire hectares during 11/2019 to 01/2020 ",
     "data": {"url": "https://raw.githubusercontent.com/57halfcooked/2dvbushfire/main/data/statehectare.csv"},
-    "width": 400,
-    "height": 300,
+    "width": 350,
+    "height": 250,
     "mark": {
       "type": "line",
       "point": true,
