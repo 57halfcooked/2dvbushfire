@@ -3,7 +3,7 @@
     "title": "The Relation between Forest Area with total forest hectares and total Fire hectares",
     "data": {"url": "https://raw.githubusercontent.com/57halfcooked/2dvbushfire/main/data/statehectare.csv"},
     "width": 340,
-    "height": 270,
+    "height": 260,
     "mark": {
       "type": "line",
       "point": true,
