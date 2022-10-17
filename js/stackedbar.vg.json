@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Forest tenures of each State in Bushfire Area",
     "data": {"url": "https://raw.githubusercontent.com/57halfcooked/2dvbushfire/main/data/foresttenure.csv"},
     "width": 500,
     "height": 500,
