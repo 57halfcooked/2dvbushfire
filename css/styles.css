@@ -44,6 +44,10 @@ body *{
     font-size: 14px;
   }
 
+  .title{
+    font-size: 27px;
+  }
+
 /*#map {
 	top:100px;
 	bottom: 100px; 
