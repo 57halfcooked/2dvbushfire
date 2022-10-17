@@ -4,6 +4,8 @@ body *{
   
   h1 {
     font-weight: 900;
+    font-size: 32px;
+    color:rgb(202, 106, 16);
   }
   
   body {
@@ -11,7 +13,7 @@ body *{
   }
   
   .page {
-    width: 950px;
+    width: 970px;
     background-color: #eee6cd;
     margin: auto;
     padding: 50px;
@@ -45,7 +47,8 @@ body *{
   }
 
   .title{
-    font-size: 27px;
+    font-size: 17px;
+    color:rgb(213, 132, 55);
   }
 
 /*#map {
